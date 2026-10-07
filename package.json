@@ -1,0 +1,17 @@
+{
+  "name": "edtech-signed-event-queue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/course_receiver.ts",
+    "register": "tsx src/register_events.ts",
+    "worker": "tsx src/deadline_worker.ts",
+    "test": "NODE_ENV=test tsx --test src/deadline_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {"zod": "^3.23.8"},
+  "devDependencies": {"@types/node": "^22.15.0", "tsx": "^4.19.0", "typescript": "^5.8.0"},
+  "engines": {"node": ">=20"},
+  "license": "MIT"
+}
